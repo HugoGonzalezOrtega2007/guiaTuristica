@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#000000"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#262525"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487">
+
+        <TextView
+            android:id="@+id/txtLondon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="LONDON"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:textSize="34sp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgLondon"
+            android:layout_width="255dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0.6"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLondon"
+            app:shapeAppearanceOverlay="@style/EsquinasRedondeadas"
+            app:srcCompat="@drawable/actvidades" />
+
+        <TextView
+            android:id="@+id/txtAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="ACTIVIDADES"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imgLondon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgLondon"
+            app:layout_constraintVertical_bias="0.503" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgComida"
+            android:layout_width="255dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="36dp"
+            android:alpha="0.6"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLondon"
+            app:shapeAppearanceOverlay="@style/EsquinasRedondeadas"
+            app:srcCompat="@drawable/comida" />
+
+        <TextView
+            android:id="@+id/textComidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMIDAS"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imgComida"
+            app:layout_constraintEnd_toEndOf="@+id/imgComida"
+            app:layout_constraintStart_toStartOf="@+id/imgComida"
+            app:layout_constraintTop_toTopOf="@+id/imgComida"
+            app:layout_constraintVertical_bias="0.52" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgCompras"
+            android:layout_width="255dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="36dp"
+            android:alpha="0.6"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgComida"
+            app:shapeAppearanceOverlay="@style/EsquinasRedondeadas"
+            app:srcCompat="@drawable/compra" />
+
+        <TextView
+            android:id="@+id/textCompras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPRAS"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCompras"
+            app:layout_constraintEnd_toEndOf="@+id/imgCompras"
+            app:layout_constraintStart_toStartOf="@+id/imgCompras"
+            app:layout_constraintTop_toTopOf="@+id/imgCompras"
+            app:layout_constraintVertical_bias="0.52" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

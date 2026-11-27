@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1B1A1A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/bgHeaderCard"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#242222"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/EsquinasRedondeadas" />
+
+        <View
+            android:id="@+id/accentBar"
+            android:layout_width="4dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:background="#E50914"
+            app:layout_constraintBottom_toBottomOf="@+id/bgHeaderCard"
+            app:layout_constraintStart_toStartOf="@+id/bgHeaderCard"
+            app:layout_constraintTop_toTopOf="@+id/bgHeaderCard" />
+
+        <TextView
+            android:id="@+id/txtTituloSeccion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:text="ACTIVIDADES"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/bgHeaderCard"
+            app:layout_constraintStart_toEndOf="@+id/accentBar"
+            app:layout_constraintTop_toTopOf="@+id/bgHeaderCard" />
+
+        <TextView
+            android:id="@+id/txtSubtit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="20dp"
+            android:text="Londres · Planes y experiencias"
+            android:textColor="#AAAAAA"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/bgHeaderCard"
+            app:layout_constraintStart_toEndOf="@+id/accentBar"
+            app:layout_constraintTop_toBottomOf="@+id/txtTituloSeccion" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bgHeaderCard">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardActividad1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#242222"
+                    android:padding="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imgActividad1"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/museo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/EsquinasRedondeadas" />
+
+                    <TextView
+                        android:id="@+id/txtActividad1Title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="British Museum"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgActividad1"
+                        app:layout_constraintTop_toTopOf="@+id/imgActividad1" />
+
+                    <TextView
+                        android:id="@+id/txtActividad1Dir"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="3dp"
+                        android:text="Bloomsbury, London"
+                        android:textColor="#E50914"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgActividad1"
+                        app:layout_constraintTop_toBottomOf="@+id/txtActividad1Title" />
+
+                    <TextView
+                        android:id="@+id/txtActividad1Desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Museo mundial de historia y cultura con millones de años de historia."
+                        android:textColor="#CCCCCC"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgActividad1"
+                        app:layout_constraintTop_toBottomOf="@+id/txtActividad1Dir" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardActividad2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#242222"
+                    android:padding="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardActividad1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imgActividad2"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/park"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/EsquinasRedondeadas" />
+
+                    <TextView
+                        android:id="@+id/txtActividad2Title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Hyde Park"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgActividad2"
+                        app:layout_constraintTop_toTopOf="@+id/imgActividad2" />
+
+                    <TextView
+                        android:id="@+id/txtActividad2Dir"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="3dp"
+                        android:text="Westminster, London"
+                        android:textColor="#E50914"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgActividad2"
+                        app:layout_constraintTop_toBottomOf="@+id/txtActividad2Title" />
+
+                    <TextView
+                        android:id="@+id/txtActividad2Desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Uno de los parques más grandes y emblemáticos del centro de Londres."
+                        android:textColor="#CCCCCC"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgActividad2"
+                        app:layout_constraintTop_toBottomOf="@+id/txtActividad2Dir" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
